@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		
+		block title
+			title Web Project Title
+
+		block description
+			meta(name="description" content="Project description")
+
+		link(rel='apple-touch-icon', href='apple-touch-icon.png')
+		
+		block styles
+			link(rel="stylesheet" href='/css/normalize.css')
+			link(rel="stylesheet" href='/css/app.css')
+	
+	body
+		include header
+			
+		main.Content
+			block content
+
+		include footer
+		
+		block scripts
+			script(src='/js/app.min.js')
