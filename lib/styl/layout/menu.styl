@@ -3,10 +3,11 @@
 	background-image linear-gradient(rgba(headerColor, .6), rgba(greenMenu, .8)), url('http://www.diarioextra.com/files/Dnews/images/detail/243073_elusodeenergias.jpg')
 	background-repeat no-repeat
 	background-size cover
-	// position absolute
+	position relative
 	
 	@media screen and (min-width 768px)
 		max-width 40%
+		left -8px
 
 	&-list
 		list-style none
@@ -18,6 +19,7 @@
 	&-item
 		margin .5em 0
 		background darken(rgba(headerColor, .8), 45%)
+		transition all 1s
 
 		a
 			padding 1em
@@ -28,3 +30,7 @@
 		i
 			margin-right .5em
 			color #01EE1A
+			
+		@media screen and (min-width 768px)
+			&:hover
+				background red
