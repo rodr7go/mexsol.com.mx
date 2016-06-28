@@ -14,7 +14,7 @@ gulp.task('browserify', function () {
 		entries: 'lib/js/app.js'
 	})
 	.transform(babelify, {
-		presets: ['es2016']
+		presets: ['es2015']
 	})
 	.bundle()
 	.pipe(source('app.min.js'))

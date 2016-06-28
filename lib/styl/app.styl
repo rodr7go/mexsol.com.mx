@@ -1,7 +1,11 @@
-headerColor = #154575;
-greenMenu = #1a9007;
-footerColor = #1F292F;
-footerBelowColor = #192126;
+greenMenu 		= #1a9007
+footerColor 	= #1F292F
+footerBelowColor = #192126
+primaryColor = #ff5456
+lightColor  = #dddddd
+darkColor   = #154575
+successColor	= #2ecc71
+highlightColor  = #ffcd2d
 
 
 // default font "Lato"
@@ -10,6 +14,7 @@ footerBelowColor = #192126;
 body
 	font-family 'Lato', sans-serif
 	font-size 16px
+	color lightColor
 
 h1
 h2
@@ -21,13 +26,51 @@ h6
 	margin 0
 	padding 1em 0
 	
+.Main-section
+	padding-top 4em
 
 .section-bg
 	background-image linear-gradient(rgba(#446CB3, .7), rgba(#03C9A9, .6)),
 	url('../img/main-img.jpg')
-	height 100vh
+	min-height 100vh
 	background-size cover
 	background-repeat no-repeat
+	
+.Title
+.SubTitle
+	padding .5em
+	text-align center
+	font-size 1em
+	text-shadow .07em .07em .15em lighten(primaryColor, 60%)
+	
+.Title
+	font-size 1.5em
+	
+.InfoSection
+	background rgba(white .4)
+
+
+
+
+//Helpers
+.text-primary
+	color primaryColor
+	text-shadow .07em .07em .15em darken(primaryColor, 60%)
+
+.text-light
+	color lightColor
+	text-shadow .07em .07em .15em darken(darkColor, 60%)
+
+.text-dark
+	color darkColor
+	text-shadow .07em .07em .15em darken(lightColor, 60%)
+
+.success-color
+	color successColor
+
+.highlight-color
+	color highlightColor
+
 
 
 @import 'layout/header.styl'
