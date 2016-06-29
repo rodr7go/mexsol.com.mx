@@ -1,16 +1,14 @@
-greenMenu 		= #1a9007
-footerColor 	= #1F292F
-footerBelowColor = #192126
-primaryColor = #ff5456
-lightColor  = #dddddd
-darkColor   = #154575
-successColor	= #2ecc71
-highlightColor  = #ffcd2d
+primaryColor = #FEC606
+lightColor  = #3498DB
+darkColor   = #00587A
+successColor	= #71BA51
+highlightColor  = #FC575E
+whiteColor = #ffffff
 
 
 // default font "Lato"
 @import url('https://fonts.googleapis.com/css?family=Lato')
-	
+@import 'https://fonts.googleapis.com/css?family=Candal'
 body
 	font-family 'Lato', sans-serif
 	font-size 16px
@@ -29,7 +27,7 @@ h6
 .Main-section
 	padding 0
 	min-height 100vh
-	background-image linear-gradient(rgba(#446CB3, .7), rgba(#03C9A9, .6)),
+	background linear-gradient(135deg, rgba(black, .8), rgba(black, .6)),
 		url('../img/main-img.jpg')
 	background-size cover
 	
@@ -51,7 +49,7 @@ h6
 
 	&.index
 		.InfoSection
-			background rgba(white .5)
+			background rgba(darkColor .5)
 			width 90%
 			padding .5em
 			margin .5em 0
@@ -81,15 +79,13 @@ h6
 .subTitle
 	padding .5em 0
 	text-align center
-	font-size 1em
-	text-shadow .07em .07em .15em lighten(primaryColor, 60%)
 	
 .title
-	font-size 1.5em
-	
+	font-family 'Candal', sans-serif
+		
 .text-primary
 	color primaryColor
-	text-shadow .07em .07em .13em darken(primaryColor, 60%)
+	// text-shadow .07em .07em .15em darken(black, 90%)
 
 .text-light
 	color lightColor
@@ -97,13 +93,17 @@ h6
 
 .text-dark
 	color darkColor
-	text-shadow .07em .07em .15em darken(lightColor, 60%)
+	// text-shadow .07em .07em .15em darken(lightColor, 60%)
 
-.success-color
+.text-success
 	color successColor
 
-.highlight-color
+.text-highlight
 	color highlightColor
+	// text-shadow .07em .07em .15em darken(black, 90%)
+		
+.text-white
+	color whiteColor
 
 .btn
 	outline none
@@ -119,6 +119,12 @@ h6
 	
 .btn-success
 	background successColor
+
+.btn-highlight
+	background highlightColor
+
+.btn-light
+	background lightColor
 	
 .m-h-xs
 	margin 0 5px
@@ -148,4 +154,19 @@ h6
 	width 80%
 	
 .image-xs
-	width 80px	
+	width 80px
+	
+.f-s-xs
+	font-size 12px
+
+.f-s-sm
+	font-size 14px
+
+.f-s-md
+	font-size 16px
+
+.f-s-lg
+	font-size 20px
+	
+.f-s-xl
+	font-size 26px
