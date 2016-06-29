@@ -27,7 +27,7 @@ h6
 	padding 1em 0
 	
 .Main-section
-	padding-top 4em
+	padding 1em 0
 
 .section-bg
 	background-image linear-gradient(rgba(#446CB3, .7), rgba(#03C9A9, .6)),
@@ -35,6 +35,9 @@ h6
 	min-height 100vh
 	background-size cover
 	background-repeat no-repeat
+	
+.Container
+	padding 3em 0
 	
 .Title
 .SubTitle
@@ -47,9 +50,33 @@ h6
 	font-size 1.5em
 	
 .InfoSection
-	background rgba(white .4)
+	background rgba(white .5)
+	width 80%
+	border-radius 3px
+	margin 2em auto
+	padding 1em
 
+	& > h3 > a > img
+		width 70px
+		margin-left 10px
+	
+	&>.Image
+		width 80%
+		margin 0 auto
+		
+		img
+			width 100%
+	
+	p
+		display inline-block
 
+	&>a>img
+		width 70px
+		margin 0
+		margin-left 10px
+	
+	&-paragraph
+		text-align center
 
 
 //Helpers
@@ -71,7 +98,20 @@ h6
 .highlight-color
 	color highlightColor
 
-
+.btn
+	outline none
+	border none
+	border-radius 3px
+	padding .5em 0
+	display inline-block
+	text-decoration none
+	text-align center
+	
+.btn-lg
+	width 100%
+	
+.btn-success
+	background successColor
 
 @import 'layout/header.styl'
 @import 'layout/footer.styl'
