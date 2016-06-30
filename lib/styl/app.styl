@@ -4,6 +4,7 @@ darkColor   = #00587A
 successColor	= #71BA51
 highlightColor  = #FC575E
 whiteColor = #ffffff
+darkGreyColor = #333;
 
 
 // default font "Lato"
@@ -12,7 +13,7 @@ whiteColor = #ffffff
 body
 	font-family 'Lato', sans-serif
 	font-size 16px
-	color darkColor
+	color darkGreyColor
 
 h1
 h2
@@ -49,21 +50,21 @@ h6
 
 	&.index
 		.InfoSection
-			background rgba(darkColor .5)
+			// background rgba(whiteColor, .2)
+			border 1px solid whiteColor
 			width 90%
-			padding .5em
+			padding 1.3em
+			box-sizing border-box
 			margin .5em 0
-			border-radius 3px
-			padding-bottom 40px
+			padding-bottom 80px
 			position relative
-
 			
 			@media screen and (min-width 768px)
 				width 30%
 					
 			> a
 				position absolute
-				bottom .5em
+				bottom 1.8em
 				left 0
 				right 0
 				margin auto
@@ -79,6 +80,7 @@ h6
 .subTitle
 	padding .5em 0
 	text-align center
+	text-shadow 2px 2px 3px rgba(black .5)
 	
 .title
 	font-family 'Candal', sans-serif
@@ -104,6 +106,14 @@ h6
 		
 .text-white
 	color whiteColor
+	
+.text-center
+	display block
+	text-align center
+	
+.text-justify
+	display block
+	text-align justify
 
 .btn
 	outline none
@@ -160,13 +170,13 @@ h6
 	font-size 12px
 
 .f-s-sm
-	font-size 14px
-
-.f-s-md
 	font-size 16px
 
-.f-s-lg
+.f-s-md
 	font-size 20px
+
+.f-s-lg
+	font-size 26px
 	
 .f-s-xl
-	font-size 26px
+	font-size 32px
