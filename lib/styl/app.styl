@@ -61,7 +61,7 @@ h6
 				padding 2em
 				padding-bottom 100px
 				background white
-				height 200px
+				height 250px
 				
 				> a
 					position absolute
@@ -69,7 +69,32 @@ h6
 					left 0
 					right 0
 					margin auto
+.installationTypes
+	background-size cover
+	min-height 100vh
+	background-position 50%
+	position relative
+	@media screen and (min-width 480px)
+		min-height 80vh
+
+	&.bg-isla
+		background linear-gradient(135deg, rgba(black, .6)50%, rgba(black, .5) 70%),url("../img/isla.jpg")
+	&.red
+
+	.wrapper
+		display none
+		&.active
+			display block
 		
+	.buttons
+		position absolute
+		left 0
+		right 0
+		bottom 2em
+		
+		.active
+			background highlightColor
+			color whiteColor	
 		
 @import 'layout/header.styl'
 @import 'layout/footer.styl'
@@ -82,7 +107,7 @@ h6
 	background-size cover
 
 .content-center
-	display flex
+	display flex !important
 	justify-content center
 	align-items center
 
@@ -90,6 +115,7 @@ h6
 	margin 0 auto
 	padding 1em 0
 	max-width 1200px
+	position relative
 	
 .title
 .subTitle
@@ -105,7 +131,7 @@ h6
 
 .text-light
 	color lightColor
-	text-shadow .07em .07em .15em darken(darkColor, 60%)
+	// text-shadow .07em .07em .15em darken(darkColor, 60%)
 
 .text-dark
 	color darkColor
@@ -133,7 +159,7 @@ h6
 	outline none
 	border none
 	border-radius 3px
-	padding .5em 0
+	padding .8em 0
 	display inline-block
 	text-decoration none
 	text-align center
@@ -145,43 +171,52 @@ h6
 
 .btn-xs
 	width 100px
-	
 .btn-sm
 	width 150px
-
 .btn-md
 	width 200px
-	
 .btn-lg
 	width 250px
-	
 .btn-xl
 	width 300px
-
 .btn-success
 	background successColor
-
 .btn-highlight
 	background highlightColor
-
 .btn-light
-	background lightColor
-	
+	background lightColor	
 .btn-bordered
 	border 1px solid rgba(darkGreyColor, .5)
-
 .btn-bordered-light
 	border 1px solid rgba(lightColor, .5)
 	color lightColor
+.btn-bordered-white
+	border 1px solid rgba(white, .5)
+
+.brd-light
+	border 1px solid rgba(lightColor, .5)
 	
 .m-h-xs
 	margin 0 5px
-	
 .m-h-sm
 	margin 0 8px
 .m-n
-	margin 0
-	
+	margin 0	
+.m-1em-0
+	margin 1em auto
+.m-0-a
+	margin 0 auto
+.m-v-xs
+	margin 5px auto
+.m-v-sm
+	margin 8px auto
+.m-v-md
+	margin 12px auto
+.m-v-lg
+	margin 16px auto
+.m-v-xl
+	margin 20px auto
+
 .va-b
 	display inline-block
 	vertical-align bottom
@@ -190,8 +225,7 @@ h6
 	margin 0 auto
 	
 	img
-		width 100%
-		
+		width 100%	
 .image-r-xs
 	width 30%
 .image-r-sm
@@ -200,27 +234,25 @@ h6
 	width 60%
 .image-r-lg
 	width 80%
-	
 .image-xs
 	width 80px
 	
 .f-s-xs
 	font-size 12px
-
 .f-s-sm
 	font-size 16px
-
 .f-s-md
 	font-size 20px
-
 .f-s-lg
-	font-size 26px
+	font-size 20px
+	@media screen and (min-width 768px)
+		font-size 26px
 	
 .f-s-xl
 	font-size 32px
-	
 .f-s-2x
-	font-size 2em
-
+	font-size 1.5em
+	@media screen and (min-width 768px)
+		font-size 3em
 .f-s-3x
 	font-size 3em
