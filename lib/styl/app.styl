@@ -69,7 +69,7 @@ h6
 					left 0
 					right 0
 					margin auto
-.installationTypes
+.iTypes
 	min-height 100vh
 	position relative
 	background-size cover
@@ -88,7 +88,7 @@ h6
 		&.active
 			display block
 		
-	.iT-btns
+	.iTypes-btns
 		position absolute
 		left 0
 		right 0
@@ -96,8 +96,9 @@ h6
 		
 		.active
 			background highlightColor
-			color whiteColor	
-		
+			color whiteColor
+
+
 @import 'layout/header.styl'
 @import 'layout/footer.styl'
 @import 'layout/menu.styl'
@@ -165,11 +166,24 @@ h6
 	display inline-block
 	text-decoration none
 	text-align center
-	transition .3s all
+	transition .6s all
 	
 	&:hover
 		background lightColor
 		color whiteColor
+		// box-shadow 320px 0 0 rgba(lightColor, .6) inset
+
+.btn2
+	outline none
+	border none
+	border-radius 3px
+	padding .8em 0
+	display inline-block
+	text-decoration none
+	text-align center
+	transition .8s all
+	box-shadow 0 0 0 trasnparent inset
+	
 
 .btn-xs
 	width 100px
