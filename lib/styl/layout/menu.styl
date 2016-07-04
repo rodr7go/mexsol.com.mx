@@ -7,36 +7,44 @@
 	right 0
 	left 0
 	
-	@media screen and (min-width 768px)
-		background none
-		width 300px
-		left initial
-
+	@media screen and (min-width 1024px)
+		bottom 0
+		display inline-block
+		background-image none
+		width 100%
+		text-align center
+		
 	&-list
 		list-style none
 		margin 0
 		padding 0
 		text-align left
 		
-		
+		@media screen and (min-width 1024px)
+			text-align right
+			display inline-block
+			
 	&-item
 		margin-bottom .5em
 		background darken(rgba(darkColor, .8), 45%)
-		transition all 1s
+		transition all .7s linear
 		
-		@media screen and (min-width 768px)
-			background darkColor
+		@media screen and (min-width 1024px)
+			background none
+			display inline-block
 
 		a
 			padding 1em
 			display block
 			text-decoration none
 			color white
+			transition .5s
 			
 		i
 			margin-right .5em
 			color successColor
-			
+		
 		@media screen and (min-width 768px)
 			&:hover
-				background darken(darkColor, 30%)
+				color highlightColor
+				box-shadow 200px 0 0 darken(darkColor, 40%) inset

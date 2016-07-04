@@ -9,8 +9,8 @@
 	z-index 999
 	
 	@media screen and (min-width 768px)
-		background transparent
-	
+		max-width inherit
+		
 	&-menuBtn
 		position absolute
 		right .5em
@@ -20,6 +20,8 @@
 		outline none
 		cursor pointer
 		text-shadow 3px 3px 5px black
+		@media screen and (min-width 1024px)
+			display none
 		
 		i
 			font-size 2em
@@ -31,6 +33,7 @@
 		
 		@media screen and (min-width 768px)
 			margin .5em
+			display inline-block
 			
 		img
 			width 100%
