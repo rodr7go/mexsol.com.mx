@@ -32,6 +32,9 @@
 		@media screen and (min-width 1024px)
 			background none
 			display inline-block
+		&:hover			
+			.DropDown-list
+				display block
 
 		a
 			padding 1em
@@ -48,3 +51,18 @@
 			&:hover
 				color highlightColor
 				box-shadow 200px 0 0 darken(darkColor, 40%) inset
+
+.DropDown-list
+	display none
+	position absolute
+	list-style none
+	text-align center
+	margin 0
+	padding 0
+
+.DropDown-item
+	transition .6s linear
+	margin 0
+	padding 0
+	&:hover
+		box-shadow 200px 0 0 darken(darkColor, 30%) inset
