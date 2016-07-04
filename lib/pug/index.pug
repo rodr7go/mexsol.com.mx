@@ -73,3 +73,10 @@ block content
 			.iTypes-btns
 				a.active.btn.btn-bordered-white.btn-lg.text-white.isla.m-v-md(href="#!" data-target="isla") Independiente de la red
 				a.m-h-sm.btn.btn-bordered-white.btn-lg.text-white.red(href="#!" data-target="red") Conexión a la red
+
+	section.Trust.content-center
+		.wrapper.text-center.content-center
+			h2.subTitle.text-highlight Ellos confían en nosotros
+			- for (var i = 1; i <= 10; i++)
+				figure.Trust-img
+					img(src=`img/trust/${i}.png` height="30")

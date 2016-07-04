@@ -97,7 +97,23 @@ h6
 		.active
 			background highlightColor
 			color whiteColor
-
+			
+.Trust
+	min-height 80vh 
+	
+	.wrapper
+		flex-flow row wrap
+		
+		h2
+			width 100%
+	&-img
+		@media screen and (min-width 768px)
+			-webkit-filter grayscale(100%)
+			transition all .2s linear
+			display inline-block
+		
+		&:hover
+			-webkit-filter none
 
 @import 'layout/header.styl'
 @import 'layout/footer.styl'
@@ -212,10 +228,14 @@ h6
 .brd-light
 	border 1px solid rgba(lightColor, .5)
 	
+.m-xl
+	margin 50px
 .m-h-xs
 	margin 0 5px
 .m-h-sm
 	margin 0 8px
+.m-h-md
+	margin 0 20px
 .m-n
 	margin 0	
 .m-1em-0
