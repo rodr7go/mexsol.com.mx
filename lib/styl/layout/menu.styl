@@ -26,15 +26,16 @@
 			
 	&-item
 		margin-bottom .5em
-		background darken(rgba(darkColor, .8), 45%)
-		transition all .7s linear
+		background darken(rgba(darkColor, .8), 50%)
+		transition all .6s linear
 		
 		@media screen and (min-width 1024px)
 			background none
 			display inline-block
-		&:hover			
-			.DropDown-list
-				display block
+			
+			&:hover
+				.DropDown-list
+					display block
 
 		a
 			padding 1em
@@ -47,7 +48,7 @@
 			margin-right .5em
 			color successColor
 		
-		@media screen and (min-width 768px)
+		@media screen and (min-width 1024px)
 			&:hover
 				color highlightColor
 				box-shadow 200px 0 0 darken(darkColor, 40%) inset
@@ -61,8 +62,10 @@
 	padding 0
 
 .DropDown-item
-	transition .6s linear
 	margin 0
 	padding 0
+	transition .6s
+	background darkColor
+
 	&:hover
 		box-shadow 200px 0 0 darken(darkColor, 30%) inset
