@@ -1,11 +1,8 @@
 .Header
 	background darkColor
-	padding 0
-	position fixed
 	max-width 1200px
 	right 0
 	left 0
-	margin auto
 	z-index 999
 	transition .5s linear
 	
@@ -14,30 +11,23 @@
 		background transparent
 		
 	&-menuBtn
-		position absolute
 		right .5em
 		top .5em
-		background none
-		border none
-		outline none
-		cursor pointer
 		text-shadow 3px 3px 5px black
+		
 		@media screen and (min-width 1024px)
 			display none
-		
 		i
 			font-size 2em
-			color successColor
 	
 	&-logo
 		width 120px
 		margin .5em auto
-		transition .5s
+		transition all .5s linear
 		
 		@media screen and (min-width 768px)
 			margin .5em
 			display inline-block
-			
 		img
 			width 100%
 			

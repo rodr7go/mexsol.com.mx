@@ -5,6 +5,14 @@
 .bg-parallax
 	background-attachment fixed
 	background-size cover
+.bg-none
+	background none
+
+//  Border
+.border-light
+	border 1px solid rgba(lightColor, .5)
+.border-none
+	border none
 
 //  Buttons
 .btn
@@ -46,27 +54,29 @@
 	border 1px solid rgba(white, .5)
 	color whiteColor
 
-//  Border
-.border-light
-	border 1px solid rgba(lightColor, .5)
-
 //  Alignment 
 .content-center
 	display flex !important
 	justify-content center
 	align-items center
 
+//  Cursor
+.cursor-p
+	cursor pointer
+
 //  Display
 .disp-n
 	display none
+.disp-inlineB
+	display inline-block
 
-//  Fonts
+//  Fonts pixels
 .f-s-xs
 	font-size 12px
 .f-s-sm
-	font-size 16px
+	font-size 14px
 .f-s-md
-	font-size 20px
+	font-size 16px
 .f-s-lg
 	font-size 20px
 	@media screen and (min-width 768px)
@@ -122,6 +132,10 @@
 	padding 0
 
 //  Margin
+.m-a
+	margin auto
+.m-n
+	margin 0
 .m-xl
 	margin 50px
 .m-h-xs
@@ -130,8 +144,6 @@
 	margin 0 8px
 .m-h-md
 	margin 0 20px
-.m-n
-	margin 0	
 .m-1em-0
 	margin 1em auto
 .m-0-a
@@ -151,9 +163,17 @@
 .m-r-sm
 	margin-right 10px	
 
+//  Outline
+.outline-none
+	outline none
+
 //  Position
 .pos-a
 	position absolute
+.pos-fix
+	position fixed
+.pos-r
+	position relative
 
 //  Padding
 .padd-n
@@ -185,9 +205,6 @@
 	display block
 	text-align justify
 
-.va-b
-	display inline-block
-	vertical-align bottom
 
 .wrapper
 	margin 0 auto
