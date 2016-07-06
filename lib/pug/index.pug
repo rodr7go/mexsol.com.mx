@@ -80,3 +80,30 @@ block content
 			- for (var i = 1; i <= 10; i++)
 				figure.Trust-img
 					img(src=`img/trust/${i}.png` height="30")
+
+	section.Contact.content-center.bg-contact.bg-parallax
+		.wrapper
+			h2.subTitle.text-primary 
+				i.fa.fa-envelope.m-r-sm
+				| Dejanos un mensaje 
+			form(action="enviar-correo.php" method="POST")
+				.form-group
+					label(for="name") Nombre
+					input#name(type="text" name="name" required)
+				.form-group
+					label(for="email") E-mail
+					input#email(type="email" name="email" required)
+				.form-group
+					label(for="phone") Teléfono
+					input#phone(type="text" name="phone")
+				.form-group
+					label(for="message") Mensaje
+					textarea#message
+				button.btn.btn-bordered.btn-bordered-white.btn-md.f-s-xs Enviar
+			address.m-v-xl.text-center
+				span.text-white Horarios de atención.#[br] Lunes a Viernes de 9 a 18 hrs.#[br]
+				span.text-white
+					i.fa.fa-phone.m-v-xl
+					| Tel: 53894580 / 53894580#[br]
+					i.fa.fa-map 
+						a.text-white(href="http://controlmas.mx") Visitanos !!
