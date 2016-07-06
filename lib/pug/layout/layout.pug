@@ -17,6 +17,7 @@ html(lang="es")
 			link(rel="stylesheet" href='/css/normalize.css')
 			link(rel="stylesheet" href='/css/app.css')
 			link(rel="stylesheet" href='/css/font-awesome.min.css')
+			link(rel="stylesheet" href="http://s.mlcdn.co/animate.css")
 	
 	body
 		include header
@@ -24,7 +25,42 @@ html(lang="es")
 		main.Content
 			block content
 
+			section#contact-form.Contact.content-center.bg-contact.bg-parallax.min-h-120
+				.wrapper
+					h2.subTitle.text-primary
+						i.fa.fa-envelope.m-r-sm
+						| Dejanos un mensaje 
+					form(action="enviar-correo.php" method="POST")
+						.form-group
+							label.text-white(for="name") Nombre
+							input#name(type="text" name="name" required)
+						.form-group
+							label.text-white(for="email") E-mail
+							input#email(type="email" name="email" required)
+						.form-group
+							label.text-white(for="phone") Teléfono
+							input#phone(type="text" name="phone")
+						.form-group
+							label.text-white(for="message") Mensaje
+							textarea#message
+						button.btn.btn-bordered.btn-bordered-white.btn-md.f-s-sm Enviar
+					address.m-v-xl.text-center
+						span.text-white Horarios de atención.#[br] Lunes a Viernes de 9 a 18 hrs.#[br]
+						span.text-white
+							i.fa.fa-phone.m-v-xl
+							| Tel: 53894580 / 53894580#[br]
+					a.map-btn.text-white.f-s-lg.text-center(href="#!")
+						i.fa.fa-map-marker.fa-2x.m-r-sm 
+						| Ubicanos !
+
+			section.Map
+				button.close-map
+					i.fa.fa-times.fa-3x.text-white
+				iframe.min-h-60(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.403696348843!2d-99.17385898510246!3d19.524274542802175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f81e40995755%3A0xdf68f83447479b49!2sMexsol%3A+Energ%C3%ADa+Solar+en+M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1467815606591" frameborder="0" style="border:0" allowfullscreen)
+
 		include footer
+
+		.map-popup-container
 		
 		block scripts
 			script(src='/js/app.min.js')

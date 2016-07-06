@@ -1,7 +1,9 @@
 .Footer
-	background linear-gradient(135deg, #1b4a77 0%, #30a2bc 100%)
 	text-align center
-	padding 2em 0
+	// padding 4em 0
+	min-height 300px
+	width 100%
+	position relative
 	
 	&-logo
 		width 100px
@@ -35,10 +37,8 @@
 			padding 2px
 			color white
 			text-decoration none
-			border-bottom 1px solid white
 	
 	&-below
-		// background footerBelowColor
 		text-align center
 		margin-top 2em
 		
@@ -52,8 +52,21 @@
 				display inline-block
 			
 		span
-			color orange
+			color whiteColor
 			
 		a
-			color darken(orange, 20%)
+			color darken(whiteColor, 20%)
+
+		
+	.wrapper
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		.data
+			text-shadow 1px 1px 3px rgba(black, .5),
+			-1px -1px 3px rgba(black, .5),
+			-1px 1px 3px rgba(black, .5),
+			1px -1px 3px rgba(black, .5)
 			
