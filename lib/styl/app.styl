@@ -4,7 +4,8 @@ darkColor   = #00587A
 successColor	= #71BA51
 highlightColor  = #FC575E
 whiteColor = #ffffff
-darkGreyColor = #333;
+darkGreyColor = #333
+sectionLightColor = #FAF8F4
 
 
 // default font "Lato"
@@ -26,7 +27,6 @@ h6
 	padding 1em 0
 	
 .Main-section
-	padding 0
 	background linear-gradient(135deg, rgba(black, .8), rgba(black, .6)),
 		url('../img/main-img.jpg')
 	
@@ -35,7 +35,7 @@ h6
 		padding 1em .5em
 	
 .MainInfo
-	background #FAF8F4
+	// background sectionLightColor
 	padding 4em 0
 	.wrapper
 		display flex
@@ -53,24 +53,13 @@ h6
 				
 			.image
 				height 150px
-				overflow hidden
+
 			.Info
-				position relative
-				border 1px solid rgba(lightColor, .5)
 				padding 2em
 				padding-bottom 100px
-				background white
 				height 250px
 				
-				> a
-					position absolute
-					bottom 1.8em
-					left 0
-					right 0
-					margin auto
 .iTypes
-	position relative
-	background-size cover
 	transition all .5s ease
 	min-height 700px
 	@media screen and (min-width 480px)
@@ -97,7 +86,7 @@ h6
 			color whiteColor
 			
 .Trust
-	background white
+	background sectionLightColor
 	.wrapper
 		flex-flow row wrap
 		
@@ -130,15 +119,13 @@ h6
 		@media screen and (min-width 1024px)
 			width 50%
 
-		form
-			display block
-			
+		form			
 			input
 			textarea
 				display block
 				width 100%
 				margin .5em auto
-				padding .5em 0
+				padding .3em 0
 				box-sizing border-box
 				border none
 				border-bottom 1px solid white
@@ -148,13 +135,13 @@ h6
 				color white
 				&:focus
 					border-bottom 1px solid highlightColor
+				
+				@media screen and (min-width 768px)
+					padding .5em 0
 			
 			.form-group
 				margin-bottom 50px
-		
-			button
-				display block
-				margin 0 auto
+
 .Map
 	width 80%
 	height 80vh
@@ -167,14 +154,10 @@ h6
 	z-index 999
 	
 	.close-map
-		position absolute
 		top -3em
-		right -3em
-		background none
-		border none
-		outline none
-		cursor pointer
+		right -2.5em
 		i
+			transition all .2s linear
 			&:hover
 				color highlightColor
 	
@@ -190,10 +173,8 @@ h6
 	left 0
 	right 0
 	bottom 0
-	background rgba(0,0,0,0.8);
-	position fixed
 	z-index 9
-	display none
+	background rgba(black, .8)
 	
 
 @import 'layout/header.styl'

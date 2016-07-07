@@ -1,0 +1,27 @@
+section#contact-form.Contact.content-center.bg-contact.bg-parallax.min-h-120
+	.wrapper
+		h2.subTitle.text-primary
+			i.fa.fa-envelope.m-r-sm
+			| Dejanos un mensaje 
+		form(action="enviar-correo.php" method="POST")
+			.form-group
+				label.text-white(for="name") Nombre
+				input#name(type="text" name="name" required)
+			.form-group
+				label.text-white(for="email") E-mail
+				input#email(type="email" name="email" required)
+			.form-group
+				label.text-white(for="phone") Teléfono
+				input#phone(type="text" name="phone")
+			.form-group
+				label.text-white(for="message") Mensaje
+				textarea#message
+			button.btn.btn-bordered.btn-bordered-white.btn-md.f-s-sm.disp-block.m-0-a Enviar
+		address.m-v-xl.text-center
+			span.text-white Horarios de atención.#[br] Lunes a Viernes de 9 a 18 hrs.#[br]
+			span.text-white
+				i.fa.fa-phone.m-v-xl
+				| Tel: 53894580 / 53894580#[br]
+		a.map-btn.text-white.f-s-lg.text-center(href="#!")
+			i.fa.fa-map-marker.fa-2x.m-r-sm 
+			| Ubicanos !
