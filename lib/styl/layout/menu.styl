@@ -28,7 +28,9 @@
 				.DropDown-list
 					display block
 		a
+		span
 			transition .5s
+			display block
 			
 		i
 			margin-right .5em
@@ -37,12 +39,23 @@
 			&:hover
 				color highlightColor
 				box-shadow 200px 0 0 darken(darkColor, 40%) inset
+		
+		@media screen and (min-width 1024px)
+			&.contact
+				display none !important
+			
 		&.contact
-			position absolute
-			right 0
-			top -.8em
-			text-shadow -2px 2px 5px rgba(black, .8)
-
+			display none
+			@media screen and (min-width 1024px)
+				&.contact
+					display block
+					position absolute
+					right 0
+					top -.8em
+					text-shadow -2px 2px 5px rgba(black, .8)
+					i
+						color whiteColor
+				
 .DropDown-list
 	position absolute
 	display none
