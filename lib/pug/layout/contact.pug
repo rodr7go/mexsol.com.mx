@@ -5,16 +5,24 @@ section#contact-form.Contact.content-center.bg-contact.bg-parallax.min-h-120
 			| Dejanos un mensaje 
 		form(action="enviar-correo.php" method="POST")
 			.form-group
-				label.text-white(for="name") Nombre
+				label.text-white(for="name")
+					i.fa.fa-user.m-r-sm
+					|  Nombre
 				input#name(type="text" name="name" required)
 			.form-group
-				label.text-white(for="email") E-mail
+				label.text-white(for="email")
+					i.fa.fa-at.m-r-sm
+					|  E-mail
 				input#email(type="email" name="email" required)
 			.form-group
-				label.text-white(for="phone") Teléfono
+				label.text-white(for="phone")
+					i.fa.fa-phone.m-r-sm
+					|  Teléfono
 				input#phone(type="text" name="phone")
 			.form-group
-				label.text-white(for="message") Mensaje
+				label.text-white(for="message")
+					i.fa.fa-commenting.m-r-sm
+					|  Mensaje
 				textarea#message
 			button.btn.btn-bordered.btn-bordered-white.btn-md.f-s-sm.disp-block.m-0-a Enviar
 		address.m-v-xl.text-center
