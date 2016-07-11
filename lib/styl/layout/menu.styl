@@ -21,12 +21,13 @@
 		transition all .6s linear
 		
 		@media screen and (min-width 1024px)
-			background none
-			display inline-block
-			
 			&:hover
 				.DropDown-list
 					display block
+		
+		@media screen and (min-width 1024px)
+			background none
+			display inline-block
 		a
 		span
 			transition .5s
@@ -58,11 +59,31 @@
 				
 .DropDown-list
 	position absolute
+	right 0
 	display none
+	z-index 99
+	width 80%
+
+	@media screen and (min-width 1024px)
+		right initial
+		width 350px
 
 .DropDown-item
-	transition .6s
 	background darkColor
+	border-bottom 1px solid lighten(darkColor, 10%)
+	a
+		transition all .4s linear
+		
+		&:hover
+			box-shadow 400px 0 0 darken(darkColor, 30%) inset
+
+.DropDown-icon
+	position absolute
+	right 0
+	transform rotate(-90deg)
+	transition .5s all
+	&.active
+		transform rotate(0deg)
 	
-	&:hover
-		box-shadow 200px 0 0 darken(darkColor, 30%) inset
+	@media screen and (min-width 1024px)
+		display none !important
