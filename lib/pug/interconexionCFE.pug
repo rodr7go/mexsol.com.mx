@@ -1,0 +1,54 @@
+extends layout/layout.pug
+
+block title
+	title Mexsol: Interconexion de energía solar con la red de Comisión Federal de Electricidad.
+
+block description
+	meta(name="description" content="Conecta los módulos solares con CFE, no tendrás que comprar baterías y el costo reducirá notablemente ya que solo pagaras por lo que consumes, en dado caso de que generes más energía solar de la que consumes, Comisión federal de electricidad almacenara esa energía restante dejándola disponible para cuando sea necesario que la requieras")
+
+block content
+	section.Interconnection.bg-inter.min-h-100.bg-parallax.content-center
+		.wrapper
+			h1.title.text-white Titulo inicial
+			p.text-primary.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	section.DownloadPdf.min-h-80.padd-2m-0
+		.wrapper
+			article.DownloadPdf-item.padd-1m
+				a(href="docs/interconexion/caracteristicasmedidores.pdf" target="_blank")
+					figure.DownloadPdf-image.image
+						img(src="img/Interconexion/pdf-icon.png" alt="icono de pdf")
+					span.DownloadPdf-description.text-center.text-highlight.m-v-sm Características de los equipos de medición y comunicación.
+			article.DownloadPdf-item.padd-1m
+				a(href="docs/interconexion/caracteristicasmedidores.pdf" target="_blank")
+					figure.DownloadPdf-image.image
+						img(src="img/Interconexion/pdf-icon.png" alt="icono de pdf")
+					span.DownloadPdf-description.text-center.text-highlight.m-v-sm Contrato para interconexion a mediana escala.
+			article.DownloadPdf-item.padd-1m
+				a(href="docs/interconexion/caracteristicasmedidores.pdf" target="_blank")
+					figure.DownloadPdf-image.image
+						img(src="img/Interconexion/pdf-icon.png" alt="icono de pdf")
+					span.DownloadPdf-description.text-center.text-highlight.m-v-sm Características de los equipos de medición y comunicación.
+			article.DownloadPdf-item.padd-1m
+				a(href="docs/interconexion/caracteristicasmedidores.pdf" target="_blank")
+					figure.DownloadPdf-image.image
+						img(src="img/Interconexion/pdf-icon.png" alt="icono de pdf")
+					span.DownloadPdf-description.text-center.text-highlight.m-v-sm Contrato para interconexion a mediana escala.
+
+	section.DAC.padd-2m-0.min-h-100.bg-dac.bg-parallax
+		h2.text-center.text-white Tarifa Domestica de Alto Consumo (DAC).
+		span.text-center.text-white Ahorra mas del 
+			span.text-primary 70% EN EL PAGO DE TU RECIBO, 
+			| nosotros te asesoramos.
+
+		article.DAC-item.padd-1m-0
+			figure.DAC-receipt.image.padd-1m-0
+				img(src="img/interconexion/recibo-antes.jpg")
+			figure.DAC-receipt.image
+				img(src="img/interconexion/recibo-despues.jpg")
+
+	section.Benefits.padd-2m-0
+		figure.image
+			img(src="img/interconexion/fide-logo.png")
+		p.text-center El Fideicomiso para Ahorro de Energía Eléctrica (FIDE) financia la utilización de fuentes de energía renovable para generación eléctrica, con capacidad hasta de 500KW a tasa preferencial, por debajo de la banca comercial. Mayor información: 
+			a.text-highlight(href="http://www.fide.org.mx/" target="_blank") www.fide.org.mx
