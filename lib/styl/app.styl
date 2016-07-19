@@ -223,8 +223,8 @@ h6
 			width 50%
 
 	&-receipt
-		width 95%
-		height 290px
+		width 90%
+		height 250px
 
 		img
 			height 100%
@@ -247,6 +247,29 @@ h6
 	&-item
 		@media screen and (min-width 768px)
 			width 75%
+
+
+
+
+table
+	border-collapse collapse
+	width 90%
+	margin-top 50px !important
+	
+	@media screen and (min-width 768px)
+		width 75%
+	
+	th
+		background darkColor
+		color whiteColor
+		padding .5em
+	
+	td
+		padding .3em
+	
+	tr:nth-child(odd)
+		background rgba(darkColor, .6)
+		color white		
 
 @import 'layout/header.styl'
 @import 'layout/footer.styl'
