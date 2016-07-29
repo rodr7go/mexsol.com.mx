@@ -73,16 +73,18 @@ block content
 				a.active.btn.btn-bordered-white.btn-lg.text-white.isla.m-v-md(href="#!" data-target="isla") Independiente de la red
 				a.m-h-sm.btn.btn-bordered-white.btn-lg.text-white.red(href="#!" data-target="red") Conexión a la red
 
-	section.Trust.content-center.min-h-80
+	section.Trust.content-center.min-h-100
 		.wrapper.text-center.content-center.bg-section-color
 			h2.subTitle.text-highlight Ellos confían en nosotros
 			- for (var i = 1; i <= 10; i++)
 				figure.Trust-img
 					img(src=`img/trust/${i}.png` height="30")
-			h2.text-highlight Las instalaciones de nuestros equipos estan certificadas por ANCE
-				figure.certificate
-					a.certificate-img.group1(href="img/certificado1.jpg")
+
+			article.ANCE.padd-1m-0
+				h2.text-highlight.padd-1m-0 Las instalaciones de nuestros equipos estan certificadas por ANCE
+				figure.certificate.image.m-1em-0
+					a.certificate-img.outline-none(href="img/certificado1.jpg")
 						img(src="img/thumbnails-certificado/certificado1.jpg")
-				figure.certificate
-					a.certificate-img.group1(href="img/certificado2.jpg")
+				figure.certificate.image.m-1em-0
+					a.certificate-img.outline-none(href="img/certificado2.jpg")
 						img(src="img/thumbnails-certificado/certificado2.jpg")
