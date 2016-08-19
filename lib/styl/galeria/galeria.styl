@@ -1,0 +1,76 @@
+.Galery
+	padding 2.5em 0 0 0
+
+	@media screen and (min-width 768px)
+		padding 0
+		background #000000
+		
+	&-section
+		border-bottom 3px solid white
+		flex-flow row wrap
+		background-attachment fixed !important
+		
+		@media screen and (min-width 768px)
+			min-height 50vh
+		
+		@media screen and (min-width 1024px)
+			display inline-block !important
+			width 33.33%
+			position relative
+			border-bottom none
+			min-height 100vh
+			
+		article
+			margin 0
+			padding 0
+			
+			h2
+				padding .5em
+
+			a
+				margin-top 15px
+				
+				&::after
+					content '\f061'
+					color transparent
+					transition .3s all
+					// margin-left 5px
+					font-family fontAwesome
+					
+				
+
+				&:hover
+					&:after
+						content '\f061'
+						color whiteColor
+						font-family fontAwesome
+						margin-left 10px
+					
+			@media screen and (min-width 1024px)
+				position absolute
+				top 0
+				left 0
+				right 0
+				bottom 0
+				margin auto
+				height 200px
+		
+		&:last-child
+			border none
+			
+	.bg-interconnection
+		background linear-gradient(135deg, rgba(black, .7)40%, rgba(black, .4) 90%),
+				url('/img/galeria/conexion-red.jpg')
+		background-size 100% 100%
+		@media screen and (min-width 1024px)
+			background-size 34% 100%
+			
+	.bg-island
+		background linear-gradient(135deg, rgba(black, .7)50%, rgba(black, .7) 70%),
+				url('/img/galeria/conexion-isla.jpg')
+		background-size 100% 100%
+
+	.bg-luminary
+		background linear-gradient(135deg, rgba(black, .6)50%, rgba(black, .5) 70%),
+				url('/img/galeria/luminarias-solares.jpg')
+		background-size 100% 100%
