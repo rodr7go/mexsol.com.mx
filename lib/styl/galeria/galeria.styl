@@ -1,76 +1,77 @@
 .Galery
-	padding 2.5em 0 0 0
-
-	@media screen and (min-width 768px)
-		padding 0
-		background #000000
+	padding-top 3em
+	
+	&.bg-galery
+		background linear-gradient(135deg, rgba(black, .8), rgba(black, .9)),
+			url('/img/borrar/1.jpg')
+		background-size cover
+		background-attachment fixed
 		
-	&-section
-		border-bottom 3px solid white
+	&-menu
+		overflow-x scroll
+		white-space nowrap
+	
+	&-title
+		padding 2em 0 !important
+		
+	&-list
+		display flex
+		justify-content space-around
+		align-items center
+		text-align center
+
+	&-listItem
+		width 100%
+		border-right 1px solid whiteColor
+		&:last-child
+			border none
+		a
+			// height 100px
+			transition all .3s
+			display block
+			color white
+			padding 1em 0
+				
+			&:hover
+				background lightColor
+				color white
+				
+	.active
+		color highlightColor
+
+	&-content
+		padding .5em
+		
+	&-title
+		padding 1.5em 0
+		
+			
+	&-grid
+		display flex
+		justify-content space-around
+		align-items center
 		flex-flow row wrap
-		background-attachment fixed !important
-		
-		@media screen and (min-width 768px)
-			min-height 50vh
-		
-		@media screen and (min-width 1024px)
-			display inline-block !important
-			width 33.33%
-			position relative
-			border-bottom none
-			min-height 100vh
-			
-		article
-			margin 0
-			padding 0
-			
-			h2
-				padding .5em
 
-			a
-				margin-top 15px
-				
-				&::after
-					content '\f061'
-					color transparent
-					transition .3s all
-					// margin-left 5px
-					font-family fontAwesome
-					
-				
+	&-img
+		width 30%
+		overflow hidden
+		margin .5em 0
+		position relative
+		&::after
+			content ''
+			transition all 1s
+			box-shadow 0 0 0 0 transparent inset
+		&:hover
 
-				&:hover
-					&:after
-						content '\f061'
-						color whiteColor
-						font-family fontAwesome
-						margin-left 10px
-					
-			@media screen and (min-width 1024px)
+			&::after
+				content ''
+				box-shadow 0 0 0 300px rgba(black, .8) inset
 				position absolute
 				top 0
 				left 0
 				right 0
 				bottom 0
-				margin auto
-				height 200px
-		
-		&:last-child
-			border none
-			
-	.bg-interconnection
-		background linear-gradient(135deg, rgba(black, .7)40%, rgba(black, .4) 90%),
-				url('/img/galeria/conexion-red.jpg')
-		background-size 100% 100%
-		@media screen and (min-width 1024px)
-			background-size 34% 100%
-			
-	.bg-island
-		background linear-gradient(135deg, rgba(black, .7)50%, rgba(black, .7) 70%),
-				url('/img/galeria/conexion-isla.jpg')
-		background-size 100% 100%
 
-	.bg-luminary
-		background linear-gradient(135deg, rgba(black, .6)50%, rgba(black, .5) 70%),
-				url('/img/galeria/luminarias-solares.jpg')
-		background-size 100% 100%
+		img
+			width auto
+			height 110%
