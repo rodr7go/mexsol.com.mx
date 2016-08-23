@@ -24,6 +24,7 @@
 			&:hover
 				.DropDown-list
 					display block
+					width 300px
 		
 		@media screen and (min-width 1024px)
 			background none
@@ -56,34 +57,37 @@
 					text-shadow -2px 2px 5px rgba(black, .8)
 					i
 						color whiteColor
-				
-.DropDown-list
-	position absolute
-	right 0
-	display none
-	z-index 99
-	width 80%
-
-	@media screen and (min-width 1024px)
-		right initial
-		width 350px
-
-.DropDown-item
-	background darkColor
-	border-bottom 1px solid lighten(darkColor, 10%)
-	a
-		transition all .4s linear
-		
-		&:hover
-			box-shadow 400px 0 0 darken(darkColor, 30%) inset
-
-.DropDown-icon
-	position absolute
-	right 0
-	transform rotate(-90deg)
-	transition .5s all
-	&.active
-		transform rotate(0deg)
 	
-	@media screen and (min-width 1024px)
-		display none !important
+	.DropDown
+		&-list
+			transition 6s !important
+			position absolute
+			right 0
+			display none
+			z-index 99
+			width 80%
+
+			@media screen and (min-width 1024px)
+				right initial
+				width 20px
+
+		&-item
+			background darkColor
+			border-bottom 1px solid lighten(darkColor, 10%)
+			transition all 6s
+			a
+				transition all .4s linear
+				
+				&:hover
+					box-shadow 400px 0 0 darken(darkColor, 30%) inset
+
+		&-icon
+			position absolute
+			right 0
+			transform rotate(-90deg)
+			transition .5s all
+			&.active
+				transform rotate(0deg)
+			
+			@media screen and (min-width 1024px)
+				display none !important
