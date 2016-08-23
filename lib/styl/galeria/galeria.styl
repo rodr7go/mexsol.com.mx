@@ -2,17 +2,22 @@
 	padding-top 3em
 	
 	&.bg-galery
-		background linear-gradient(135deg, rgba(black, .8), rgba(black, .9)),
+		background linear-gradient(135deg, rgba(black, .5), rgba(black, .6)),
 			url('/img/borrar/1.jpg')
 		background-size cover
 		background-attachment fixed
 		
 	&-menu
+		margin-top 1em
+		padding-top .5em
 		overflow-x auto
 		white-space nowrap
+		background darken(darkColor, 50%)
 		
 		@media screen and (min-width 1024px)
 			overflow-x inherit
+			background transparent
+			
 	
 	&-title
 		padding 2em 0 !important
@@ -22,16 +27,9 @@
 		justify-content space-around
 		align-items center
 		text-align center
-		
-		@media screen and (min-width 1024px)
-			border 1px solid whiteColor
 
 	&-listItem
 		width 100%
-		border-right 1px solid whiteColor
-		
-		&:last-child
-			border none
 			
 			@media screen and (min-width 1024px)
 				border-bottom 1px solid whiteColor
@@ -42,8 +40,9 @@
 			padding 1em 0
 				
 			&:hover
-				background lightColor
-				color white
+				color #CCC
+				text-shadow 2px 2px 3px white
+				font-style italic
 				
 	.active
 		color highlightColor
@@ -58,19 +57,18 @@
 	&-grid
 		display flex
 		justify-content space-around
-		align-items center
+		// align-items center
 		flex-flow row wrap
 
 	&-img
 		max-width 30%
 		overflow hidden
 		margin .5em 0
-		
-		@media screen and (min-width 768px)
-			width 23%
+		@media screen and (max-width 768px)
+			margin .8em 0
 		
 		@media screen and (min-width 1024px)
-			width 16%
+			width 19%
 
 		img
 			width auto
