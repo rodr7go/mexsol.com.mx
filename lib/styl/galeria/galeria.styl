@@ -8,8 +8,11 @@
 		background-attachment fixed
 		
 	&-menu
-		overflow-x scroll
+		overflow-x auto
 		white-space nowrap
+		
+		@media screen and (min-width 1024px)
+			overflow-x inherit
 	
 	&-title
 		padding 2em 0 !important
@@ -19,14 +22,20 @@
 		justify-content space-around
 		align-items center
 		text-align center
+		
+		@media screen and (min-width 1024px)
+			border 1px solid whiteColor
 
 	&-listItem
 		width 100%
 		border-right 1px solid whiteColor
+		
 		&:last-child
 			border none
+			
+			@media screen and (min-width 1024px)
+				border-bottom 1px solid whiteColor
 		a
-			// height 100px
 			transition all .3s
 			display block
 			color white
@@ -53,24 +62,15 @@
 		flex-flow row wrap
 
 	&-img
-		width 30%
+		max-width 30%
 		overflow hidden
 		margin .5em 0
-		position relative
-		&::after
-			content ''
-			transition all 1s
-			box-shadow 0 0 0 0 transparent inset
-		&:hover
-
-			&::after
-				content ''
-				box-shadow 0 0 0 300px rgba(black, .8) inset
-				position absolute
-				top 0
-				left 0
-				right 0
-				bottom 0
+		
+		@media screen and (min-width 768px)
+			width 23%
+		
+		@media screen and (min-width 1024px)
+			width 16%
 
 		img
 			width auto
