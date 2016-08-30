@@ -203,6 +203,25 @@ h6
 .Product
 	background #FAF8F4
 	padding-top 5em
+	
+	&-menu
+		width 50px
+		
+		ul
+			margin 0
+			padding 0
+		li
+			text-align center
+			height 50px
+			position relative
+			border 1px solid #dededede
+		
+		a
+			&::before
+				content '\f042'
+				font-family fontAwesome
+				
+			
 
 	&-item
 		width 70%
