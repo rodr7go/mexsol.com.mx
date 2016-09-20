@@ -1,0 +1,100 @@
+.Product
+	background #faf8f4
+	padding-top 5em
+	@media screen and (min-width 1024px)
+		background #dedede
+
+	.wrapper
+		@media screen and (min-width 640px)
+			display flex
+			align-items center
+			justify-content space-between
+			flex-flow row wrap
+
+		@media screen and (min-width 1024px)
+			margin-left 150px
+
+		@media screen and (min-width 1400px)
+			margin 0 auto
+
+	&-menu
+		width 45px
+		position fixed
+		background whiteColor
+		z-index 2
+		left 5px
+
+		@media screen and (min-width 1024px)
+			width 175px
+			left 10px
+
+		ul
+			margin 0
+			padding 0
+			box-shadow 2px 2px 5px rgba(black, .5)
+		li
+			text-align center
+			height 45px
+			border 1px solid #dddddd
+			transition all .2s ease-out
+
+			&:hover
+				background #ddd
+			a
+				padding 1em 0
+				font-family 'Lato'
+				color #929292
+				white-space nowrap
+				font-size 14px
+
+
+				@media screen and (min-width 1024px)
+					text-align left
+
+				&::before
+					font-family fontAwesome
+					display inline-block
+					color #929292
+
+					@media screen and (min-width 1024px)
+						margin 0 5px
+
+				&.solar-panels::before
+					content '\F069'
+				&.solar-batteries::before
+					content '\f030'
+
+
+			.active
+				color highlightColor
+				&::before
+					color highlightColor
+	&-item
+		width 70%
+		border 1px solid #ebebeb
+		margin 0 auto
+		padding 1em
+		margin-bottom 1em
+
+		@media screen and (min-width 640px)
+			width 35%
+
+		@media screen and (min-width 1024px)
+			width 25%
+
+		@media screen and (min-width 1280px)
+			width 20%
+
+
+	&-img
+		width 80%
+
+	&-title
+		margin 0
+		padding 0
+
+	&-description
+		padding 0 .8em
+
+		@media screen and (min-width 1024px)
+			padding 0 .5em
