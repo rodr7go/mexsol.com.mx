@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="066e3a70-acde-4256-9687-396d8c1af5cf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pug/blog-grid.pug" afterPath="$PROJECT_DIR$/lib/pug/blog-grid.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/styl/blog/blog.styl" afterPath="$PROJECT_DIR$/lib/styl/blog/blog.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/blog-grid.html" afterPath="$PROJECT_DIR$/public/blog-grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pug/paneles-solares.pug" afterPath="$PROJECT_DIR$/lib/pug/paneles-solares.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/styl/helpers.styl" afterPath="$PROJECT_DIR$/lib/styl/helpers.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/styl/productos/productos.styl" afterPath="$PROJECT_DIR$/lib/styl/productos/productos.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/paneles-solares.html" afterPath="$PROJECT_DIR$/public/paneles-solares.html" />
     </list>
     <ignored path="new-mexsol.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blog-grid.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pug/blog-grid.pug">
+      <file leaf-file-name="productos.styl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/styl/productos/productos.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+            <state relative-caret-position="1953">
+              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -40,28 +40,28 @@
       <file leaf-file-name="helpers.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/styl/helpers.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="154" column="14" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
+            <state relative-caret-position="458">
+              <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.styl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/styl/blog/blog.styl">
+      <file leaf-file-name="paneles-solares.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pug/paneles-solares.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="322">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pug/index.pug">
+      <file leaf-file-name="productos-menu.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pug/layout/productos/productos-menu.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,13 +83,14 @@
         <option value="$PROJECT_DIR$/lib/styl/layout/header.styl" />
         <option value="$PROJECT_DIR$/lib/styl/layout/menu.styl" />
         <option value="$PROJECT_DIR$/lib/pug/index.pug" />
-        <option value="$PROJECT_DIR$/lib/styl/productos/productos.styl" />
         <option value="$PROJECT_DIR$/lib/styl/app.styl" />
-        <option value="$PROJECT_DIR$/lib/styl/helpers.styl" />
         <option value="$PROJECT_DIR$/lib/js/app.js" />
         <option value="$PROJECT_DIR$/lib/pug/layout/menu.pug" />
         <option value="$PROJECT_DIR$/lib/pug/blog-grid.pug" />
         <option value="$PROJECT_DIR$/lib/styl/blog/blog.styl" />
+        <option value="$PROJECT_DIR$/lib/pug/paneles-solares.pug" />
+        <option value="$PROJECT_DIR$/lib/styl/helpers.styl" />
+        <option value="$PROJECT_DIR$/lib/styl/productos/productos.styl" />
       </list>
     </option>
   </component>
@@ -273,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -360,13 +362,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="productos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mexsol.com.mx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mexsol.com.mx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,7 +403,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="helpers&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/helpers.styl&#10;blog&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/pug/blog-grid.pug&#10;menu&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/layout/menu.styl" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/app.styl&#10;help&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/helpers.styl&#10;panel&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/pug/paneles-solares.pug&#10;pro&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/productos/productos.styl&#10;helpers&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/helpers.styl&#10;blog&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/pug/blog-grid.pug&#10;menu&#9;FILE&#9;file://C:/xampp/htdocs/GitRepos/mexsol.com.mx/lib/styl/layout/menu.styl" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RunManager">
@@ -460,11 +487,12 @@
       <workItem from="1474348863647" duration="3708000" />
       <workItem from="1474409563343" duration="4000" />
       <workItem from="1474768036178" duration="9043000" />
+      <workItem from="1474778575709" duration="2255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30306000" />
+    <option name="totallyTimeSpent" value="32561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -476,18 +504,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -506,6 +534,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/pug/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pug/blog-grid.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -796,21 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/styl/productos/productos.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/styl/app.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/styl/galeria/galeria.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -823,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,40 +859,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#97#164#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pug/index.pug">
+    <entry file="file://$PROJECT_DIR$/lib/styl/blog/blog.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/styl/helpers.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="154" column="14" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
+        <state relative-caret-position="462">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pug/blog-grid.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="469">
           <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/styl/blog/blog.styl">
+    <entry file="file://$PROJECT_DIR$/lib/pug/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="21">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/styl/app.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pug/layout/productos/productos-menu.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pug/paneles-solares.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/styl/helpers.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/styl/productos/productos.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1953">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
           <folding />
         </state>
       </provider>
