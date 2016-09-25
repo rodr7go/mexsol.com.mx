@@ -1,10 +1,25 @@
 .Blog
-    .wrapper
-        padding 0 1em
-        background #eeeeee
-
-    .bg-headerBlog
-        background linear-gradient(135deg, rgba(black, .5), rgba(black, .6)),
-            url('/img/blog/header-blog.jpg')
+    &-headerBg
+        background linear-gradient(135deg, rgba(black, .5), rgba(black, .6)), url('/img/blog/header-blog.jpg')
         background-size cover
         background-attachment fixed
+
+    &-grid
+        background #eeeeee
+        .wrapper
+            display flex
+            justify-content space-around
+            flex-flow row wrap
+            padding 0 1em
+    &-item
+        margin 1em 0
+        @media screen and (min-width 1024px)
+            padding-bottom 1em
+            width 30%
+            display inline-block
+
+        &Image
+            @media screen and (min-width 468px)
+                height 200px
+                img
+                    height 100%
