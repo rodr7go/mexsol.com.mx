@@ -38,6 +38,9 @@
 			border 1px solid #dddddd
 			transition all .2s ease-out
 
+			@media screen and (min-width 1024px)
+				text-align left
+
 			&:hover
 				background #ddd
 			a
@@ -46,23 +49,14 @@
 				color #929292
 				white-space nowrap
 				font-size 14px
-
+			i
+				@media screen and (min-width 1024px)
+					margin 0 5px
+			.product-name
+				display none
 
 				@media screen and (min-width 1024px)
-					text-align left
-
-				&::before
-					font-family fontAwesome
 					display inline-block
-					color #929292
-
-					@media screen and (min-width 1024px)
-						margin 0 5px
-
-				&.solar-panels::before
-					content '\F069'
-				&.solar-batteries::before
-					content '\f030'
 
 
 			.active
